@@ -18,14 +18,17 @@ const library = [
 
 const numberOfBooksRead = () => {
   // write your code here
-	let total = library.reduce((prev,curr) =>{
-		if(curr.readingStatus){
-			prev++; 
-		}
-		return prev;
-	},0)
-	return total;
+	// let total = library.reduce((prev,curr) =>{
+	// 	if(curr.readingStatus){
+	// 		prev++; 
+	// 	}
+	// 	return prev;
+	// },0)
+	// return total;
+	return library.filter(ele=>ele.readingStatus).length;
 };
+
+	
 
 // Do not change the code below
 
